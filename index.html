@@ -16,13 +16,34 @@
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <h1 class="text-xl font-bold">Territory Runner</h1>
 
-        <nav class="flex gap-2">
+        <button
+          type="button"
+          class="btn btn-ghost btn-sm md:hidden"
+          data-menu-toggle
+          data-menu-target="mobileMenu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <nav class="hidden gap-2 md:flex">
           <a href="run.html" class="btn btn-sm btn-primary">Run</a>
           <a href="leaderboard.html" class="btn btn-sm btn-outline">Leaderboard</a>
           <a href="login.html" class="btn btn-sm btn-ghost">Login</a>
           <a href="signup.html" class="btn btn-sm btn-secondary">Sign up</a>
         </nav>
       </div>
+
+      <nav id="mobileMenu" class="mx-auto hidden max-w-6xl space-y-2 px-4 pb-4 md:hidden">
+        <a href="run.html" class="btn btn-primary btn-sm w-full">Run</a>
+        <a href="leaderboard.html" class="btn btn-outline btn-sm w-full">Leaderboard</a>
+        <a href="login.html" class="btn btn-ghost btn-sm w-full">Login</a>
+        <a href="signup.html" class="btn btn-secondary btn-sm w-full">Sign up</a>
+      </nav>
     </header>
 
     <main class="mx-auto max-w-6xl px-4 py-14">
@@ -41,5 +62,7 @@
         </div>
       </section>
     </main>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
