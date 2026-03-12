@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Run | Territory Runner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-base-200">
+    <header class="border-b border-base-300 bg-base-100">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <h1 class="text-xl font-bold">Run</h1>
+        <a href="index.html" class="btn btn-sm btn-ghost">Back to Home</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <section class="grid gap-6 md:grid-cols-2">
+        <div class="card bg-base-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Add Demo Run</h2>
+            <form id="runForm" class="space-y-4">
+              <label class="form-control w-full">
+                <span class="label-text mb-1">Runner Name</span>
+                <input type="text" id="runnerName" class="input input-bordered w-full" required />
+              </label>
+
+              <label class="form-control w-full">
+                <span class="label-text mb-1">Distance (km)</span>
+                <input type="number" id="distance" min="1" class="input input-bordered w-full" required />
+              </label>
+
+              <button type="submit" class="btn btn-primary w-full">Add Run</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Recent Runs</h2>
+            <ul id="runList" class="space-y-2 text-sm text-base-content/80"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/run.js"></script>
+  </body>
+</html>
