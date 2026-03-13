@@ -9,8 +9,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
      <link rel="icon" href="images/runner.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    
   </head>
   <body class="min-h-screen bg-base-200">
     <header class="border-b border-base-300 bg-base-100">
@@ -41,42 +44,183 @@
       </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-4 py-8">
-      <section class="overflow-x-auto rounded-box bg-base-100 shadow-sm">
-        <table class="table table-zebra">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Runner</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Alex</td>
-              <td>980</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Nafis</td>
-              <td>930</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Rima</td>
-              <td>890</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Tanvir</td>
-              <td>860</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
+    <main class="mx-auto max-w-6xl px-4 py-8 bg-gradient-to-br from-[#1C1932] via-[#2A1B4A] to-[#3B1764] text-white">
 
+      <h1 class="text-4xl text-center mb-5 font-bold"> Weekly Leaderboard </h1>
+      <h3 class="text-lg text-center mb-7">Top performers this week</h3>
+      <!-- top three section  -->
+      <section id="top-three " class="">
+
+        <div id="first" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#B07A55]/50 backdrop-blur-md hover:scale-105 transition-transform duration-300">
+          <div >
+              <h1 class="text-3xl"><i class="fa-solid fa-trophy"></i></h1>
+          </div>
+          <div id="profile-photo">
+              <h1 class="text-4xl font-bold ">#1</h1> 
+          </div>
+          <div>
+             <h1 class="text-3xl"><i class="fa-regular fa-circle-user"></i></h1>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-bold"">Alex Chen</h2>
+            <p class="text-xl">120 km</p>
+          </div>
+        </div>
+
+        <div id="second" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6FA3]/50 backdrop-blur-md hover:scale-105 transition-transform duration-300">
+          <div >
+              <h1 class="text-3xl"><i class="fa-solid fa-medal"></i></h1>
+          </div>
+          <div id="profile-photo">
+              <h1 class="text-4xl font-bold ">#2</h1> 
+          </div>
+          <div>
+             <h1 class="text-3xl"><i class="fa-regular fa-circle-user"></i></h1>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-bold"">Alex Chen</h2>
+            <p class="text-xl">120 km</p>
+          </div>
+        </div>
+
+        <div id="third" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#9B4C6A]/55 backdrop-blur-md hover:scale-105 transition-transform duration-300">
+          <div >
+              <h1 class="text-3xl"><i class="fa-solid fa-award"></i></h1>
+          </div>
+          <div id="profile-photo">
+              <h1 class="text-4xl font-bold ">#3</h1> 
+          </div>
+          <div>
+             <h1 class="text-3xl"><i class="fa-regular fa-circle-user"></i></h1>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-bold"">Alex Chen</h2>
+            <p class="text-xl">120 km</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 4-10 section  -->
+      <section id="top-four-to-ten" class="p-5 bg-[#4B3B64]/60 border-white/10 rounded-lg">
+        <div class="header"><h2 class="text-2xl font-bold mb-4">Rankings 4-10</h2></div>
+
+        <!-- postion container  -->
+        <div class="container mt-10">
+
+          <div id="four" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#4</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="five" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#5</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="six" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#6</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="seven" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#7</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="eight" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#8</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="nine" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#9</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+
+          <div id="ten" class="flex border-2 border-yellow-400 justity-center items-center rounded-lg p-4 mb-8 gap-5 bg-[#7A6F85]/40 hover:scale-105 transition-transform duration-300">
+            
+            <div id="profile-photo">
+              <h1 class="text-xl font-bold ">#10</h1> 
+            </div>
+            <div>
+              <h1 class="text-xl"><i class="fa-regular fa-circle-user"></i></h1>
+            </div>
+            
+            <div>
+              <h2 class="text-lg font-bold"">Alex Chen</h2>
+              <p class="">120 km</p>
+          </div>
+        </div>
+      </div>
+        
+      </section>
+      
+    </main>
+    
     <script src="js/main.js"></script>
   </body>
 </html>
